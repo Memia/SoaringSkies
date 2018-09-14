@@ -61,7 +61,7 @@ public class PlayerMovment : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) && !IsGrounded) //start soaring
         {
             soaring = true;
-            Physics.gravity = new Vector3(0, -4f, 0);
+            Physics.gravity = new Vector3(0, -9f, 0);
         }
         else
         {
