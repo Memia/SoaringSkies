@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ring : MonoBehaviour
+public class RingForward : MonoBehaviour
 {
     public GameObject player;
+	public float upForce = 300;
     public float force = 5000f;
     // Use this for initialization
     void Start()
@@ -21,7 +22,7 @@ public class Ring : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            player.GetComponent<Rigidbody>().AddForce(0, 2000, force);
+            player.GetComponent<Rigidbody>().AddForce(0, upForce, force);
         }
     }
 }
