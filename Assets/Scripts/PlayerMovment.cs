@@ -57,7 +57,7 @@ public class PlayerMovment : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        EnergyBlast();
+        //EnergyBlast();
         BoostingUp();
         Movement();
     }
