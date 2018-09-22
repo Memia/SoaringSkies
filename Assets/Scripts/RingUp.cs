@@ -21,7 +21,7 @@ public class RingUp : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-			other.GetComponent<Rigidbody>().AddForce(0, 2000, force);
+			other.GetComponent<Rigidbody>().AddRelativeForce(0, 0, force);
         }
     }
 }

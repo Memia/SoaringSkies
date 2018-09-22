@@ -22,7 +22,7 @@ public class RingForward : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            player.GetComponent<Rigidbody>().AddForce(0, upForce, force);
+            player.GetComponent<Rigidbody>().AddRelativeForce(0, upForce, force);
         }
     }
 }

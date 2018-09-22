@@ -95,8 +95,9 @@ public class PlayerMovment : MonoBehaviour
         float inputH = Input.GetAxis("Horizontal") * Time.deltaTime;
         float inputV = Input.GetAxis("Vertical") * Time.deltaTime;
 
-        rigid.AddForce(new Vector3(inputH * moveSpeed, 0, inputV * moveSpeed), ForceMode.Impulse);
-        if(Input.GetKey(KeyCode.W))
+        rigid.AddRelativeForce(new Vector3(inputH * moveSpeed, 0, inputV * moveSpeed), ForceMode.Impulse);
+
+		if (Input.GetKey(KeyCode.W))
         {
             moveSpeed += speedIncreaseRate;
         }
@@ -115,12 +116,12 @@ public class PlayerMovment : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) && jump) //start soaring
         {
             soaring = true;
-            Physics.gravity = new Vector3(0, -20f, 0);
+            Physics.gravity = new Vector3(0, -40f, 0);
         }
         else
         {
             soaring = false;
-            Physics.gravity = new Vector3(0, -9.81f, 0);
+            Physics.gravity = new Vector3(0, -20f, 0);
         }
     }
     public void UpdateStats()
