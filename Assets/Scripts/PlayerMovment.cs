@@ -13,6 +13,7 @@ public class PlayerMovment : MonoBehaviour
     public float speedMultiplier;
     public float speedIncreaseRate;
     private Vector3 moveDirection;
+	PlayerStats playerStats;
     Rigidbody rigid;
 
     [Header("Gliding")]
@@ -42,7 +43,8 @@ public class PlayerMovment : MonoBehaviour
 
     void Start()
     {
-        rigid = GetComponent<Rigidbody>();
+		playerStats = GetComponent<PlayerStats>();
+		rigid = GetComponent<Rigidbody>();
         readyToBlast = true;
     }
     private void Update()
@@ -113,16 +115,19 @@ public class PlayerMovment : MonoBehaviour
     }
     public void Soaring()
     {
-        if(Input.GetKey(KeyCode.Space) && jump) //start soaring
-        {
-            soaring = true;
-            Physics.gravity = new Vector3(0, -40f, 0);
-        }
-        else
-        {
-            soaring = false;
-            Physics.gravity = new Vector3(0, -20f, 0);
-        }
+		if (playerStats.curEnergy >= 1)
+		{
+			if (Input.GetKey(KeyCode.Space) && jump) //start soaring
+			{
+				soaring = true;
+				Physics.gravity = new Vector3(0, -40f, 0);
+			}
+			else
+			{
+				soaring = false;
+				Physics.gravity = new Vector3(0, -20f, 0);
+			}
+		}
     }
     public void UpdateStats()
     {
