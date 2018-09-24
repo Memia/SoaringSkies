@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovment : MonoBehaviour
 {
@@ -68,10 +67,6 @@ public class PlayerMovment : MonoBehaviour
         if(other.gameObject.tag == "Boost")
         {
             boosting = true;
-        }
-        if (other.gameObject.tag == "Void")
-        {
-            SceneManager.LoadScene(0);
         }
     }
     private void OnTriggerExit(Collider other)
