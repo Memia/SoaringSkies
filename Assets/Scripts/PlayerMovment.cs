@@ -45,6 +45,7 @@ public class PlayerMovment : MonoBehaviour
 		playerStats = GetComponent<PlayerStats>();
 		rigid = GetComponent<Rigidbody>();
         readyToBlast = true;
+		Cursor.visible = false;
     }
     private void Update()
     {

@@ -55,6 +55,10 @@ public class PlayerStats : MonoBehaviour
 		{
 			outOfBounds = true;
 		}
+		if (other.gameObject.tag == "Finish")
+		{
+			Time.timeScale = 0;
+		}
 	}
 	void Energy()
 	{
@@ -111,5 +115,9 @@ public class PlayerStats : MonoBehaviour
 				timerToRestart = 0;
 			}
 		}
+	}
+	void FinishLine()
+	{
+		
 	}
 }

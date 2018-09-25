@@ -64,7 +64,7 @@ public class MouseLook : MonoBehaviour
                 case RotationalAxis.MouseX:
                     //transform the rotation on our game objects Y by our Mouse input Mouse X times X sensitivity
                     ////////////////(X)/////////////////(Y)/////////////////////(Z)
-                    transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
+                    transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX * Time.deltaTime, 0) ;
                     break;
                 #endregion
                 #region MouseY
