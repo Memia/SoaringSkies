@@ -57,7 +57,8 @@ public class PlayerStats : MonoBehaviour
 		}
 		if (other.gameObject.tag == "Finish")
 		{
-			Time.timeScale = 0;
+			//Time.timeScale = 0;
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		}
 	}
 	void Energy()

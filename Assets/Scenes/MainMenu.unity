@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 42139605}
   - component: {fileID: 42139604}
   - component: {fileID: 42139606}
+  - component: {fileID: 42139607}
   m_Layer: 5
   m_Name: PressAnyKey
   m_TagString: Untagged
@@ -257,6 +258,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &42139607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 42139602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &86978973
 Prefab:
   m_ObjectHideFlags: 0
@@ -1199,8 +1214,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 589347041}
-  m_LocalRotation: {x: -0.012307481, y: -0.014541039, z: -0.0003858308, w: 0.99981844}
-  m_LocalPosition: {x: 912.3117, y: -311.4051, z: -753.05756}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 762.55066, y: -220.3504, z: -1405.7384}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6907,6 +6922,7 @@ GameObject:
   - component: {fileID: 1129240896}
   - component: {fileID: 1129240895}
   - component: {fileID: 1129240897}
+  - component: {fileID: 1129240898}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -6984,6 +7000,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1129240898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1129240893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &1148370822
 Prefab:
   m_ObjectHideFlags: 0
@@ -13311,6 +13341,7 @@ GameObject:
   - component: {fileID: 2102360952}
   - component: {fileID: 2102360951}
   - component: {fileID: 2102360953}
+  - component: {fileID: 2102360954}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -13394,6 +13425,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2102360954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102360949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!4 &2133268821 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4392087179698044, guid: 60796ddbcf6162943bb816498fa35505,
